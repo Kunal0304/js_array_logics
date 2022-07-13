@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       var a=[5,3,8,9,1,2,6,7,4,6,2]
+       var r=0;
+       document.write(" before accending order"); 
+       document.write("<br>"+a);        
+
+       document.write("<br>"+" after accending order"+"<br>");         
+       for (i = 0; i < a.length; i++) {
+
+        for ( j = i+1; j < a.length; j++) {
+
+            if (a[i]>a[j]) {
+                r=a[i];
+                a[i]=a[j];
+                a[j]=r;
+
+            }   
+        }
+        document.write(a[i]+",");         
+    }
+   </script> 
+</body>
+</html>
